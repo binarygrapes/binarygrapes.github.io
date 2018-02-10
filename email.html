@@ -111,15 +111,23 @@
       var scopes =
         'https://www.googleapis.com/auth/gmail.readonly '+
         'https://www.googleapis.com/auth/gmail.send';
-      
-      gapi.load('client:auth2', () => {
+		
+	
+		
+		
+      function handleClientLoad() {
+        gapi.client.setApiKey(apiKey);
+		
+		gapi.load('client:auth2', () => {
     gapi.client.load('gmail', 'v1', () => {
       console.log('Loaded Gmail');
     });
-}
-      function handleClientLoad() {
-        gapi.client.setApiKey(apiKey);
+})
+		
         window.setTimeout(checkAuth, 1);
+		
+		
+		
       }
       function checkAuth() {
         gapi.auth.authorize({
