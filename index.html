@@ -17,12 +17,6 @@
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 
 
-
-
-
-
-
-
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <!-- Style The Contact Form How Ever You Prefer -->
@@ -76,16 +70,22 @@
 </nav>
 
 <!-- Header -->
-<div id="intro">
-  <div class="intro-body">
-    <div class="container">
-      <div class="row">
+<div id="intro"  >
+  <div class="intro-body" >
+  
+  <!--just use class bg wherever you want shaked text-->
+    <div class="container bg">
+      <div class="row ">
         <div class="col-md-10 col-md-offset-1">
           <h1>We are <span class="brand-heading" style="color: white !important;">Binary Grapes</span></h1>
           <p class="intro-text" style="font-size:30px !important;">Shape your career</p>
-          <a href="#about" class="btn btn-default page-scroll">Learn More</a> </div>
+</div>
+
       </div>
     </div>
+	<div>        
+		<a href="#about" class="btn btn-default page-scroll" style="margin-right:40px">Login</a>  
+		    <a href="#about" class="btn btn-default page-scroll">SignUp</a> </div>
   </div>
 </div>
         <div style="font-size:22px;color:brown;background-color: beige;">
@@ -357,12 +357,12 @@
 
 	
     <fieldset class="pure-group">
-      <input id="name" name="name" placeholder="your full name " />
+      <input id="name" name="name" placeholder="Your Full Name " />
     </fieldset>
 	
 	<fieldset class="pure-group">
       <input id="email" name="email" type="email" value=""
-      required placeholder="your email address"/>
+      required placeholder="Your Email Address"/>
       <span id="email-invalid" style="display:none">
         Must be a valid email address</span>
     </fieldset>
@@ -372,8 +372,9 @@
       placeholder="Tell us what's on your mind..."></textarea>
     </fieldset>
 
+	
    
-    <button class="button-success pure-button button-xlarge">
+    <button class="button-success pure-button button-xlarge" >
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
   </form>
@@ -413,14 +414,12 @@
 
 
 
-  <script data-cfasync="false" type="text/javascript"
-  src="js/form-submission-handler.js"></script>
-  
-  
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   
 
 <!-- Javascripts
     ================================================== --> 
+	<script type="text/javascript" src="js/shakingEffect.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
